@@ -12,7 +12,7 @@ const information = document.querySelector('.information');
 
 logout.addEventListener("click", (e) => {
   window.localStorage.removeItem("token");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
 Array.from(bookmarks).map((item) => {
   item.addEventListener("click", (e) => {
