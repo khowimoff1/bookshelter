@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="stylesheet" href="./login/assests/css/main.css" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <div class="login">
+      <img
+        class="l_logo"
+        src="./login/assests/image/Group 200.svg"
+        alt="logo"
+        width="226"
+        height="44"
+      />
+      <form id="l_form">
+        <label for="l_text">
+          <img src="./login/assests/image/user.svg" alt="user" width="20" height="20" />
+          <input type="text" placeholder="USERNAME" id="l_text" required/>
+        </label>
+        <label for="l_password">
+          <img src="./login/assests/image/lock.svg" alt="lock" width="20" height="20" />
+          <input type="password" placeholder="PASSWORD" id="l_password" required autocomplete="1" />
+        </label>
+        <button type="submit" id="L_btn">LOGIN</button>
+      </form>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>

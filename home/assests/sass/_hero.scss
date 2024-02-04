@@ -1,0 +1,202 @@
+.hero {
+    display: flex;
+    background: rgb(248, 250, 253);
+    .bookmarks {
+      background: #fff;
+      margin-top: 1px;
+      padding-top: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
+      border-top: 1px solid rgb(214, 218, 224);
+      border-right: 1px solid rgb(214, 218, 224);
+    }
+    .bookmarks h1 {
+      color: rgb(0, 0, 0);
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-bottom: 5px;
+    }
+    .bookmarks p {
+      color: rgb(0, 0, 0);
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 155.6%;
+    }
+    .bookmarks_shop li {
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 10px;
+      background: rgb(248, 250, 253);
+      margin-top: 15px;
+    }
+    .bookmarks_shop li div h3 {
+      color: rgb(0, 0, 0);
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+    }
+    .bookmarks_shop li div p {
+      color: rgb(117, 120, 129);
+      font-family: Noto Sans;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-top: 5px;
+    }
+    .book_open {
+      cursor: pointer;
+    }
+    .open_delete{
+      display: flex;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .books {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 23px;
+      margin-top: 23px;
+      margin-left: 23px;
+      margin-bottom: 23px;
+    }
+    .books li {
+      box-sizing: border-box;
+      border-radius: 5px;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+      background: rgb(255, 255, 255);
+    }
+    .books li:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease; 
+    }
+    .books_img {
+      margin: 23px 28px;
+      padding: 18px 28px 18px 20px;
+      border-radius: 5px;
+      background: rgb(248, 250, 253);
+    }
+    .books_img_n {
+      margin-left: 20px;
+    }
+    .books_img_n h1 {
+      color: rgb(0, 0, 0);
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+    .books_img_n p {
+      color: rgb(117, 120, 129);
+      font-family: Noto Sans;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-top: 2px;
+    }
+    .books_btn {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .books_btn div:hover {
+      cursor: default;
+    }
+    #books_bookmarks {
+      padding: 10px 26px;
+      color: rgb(0, 0, 0);
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      border-radius: 4px;
+      background: rgb(255, 216, 13);
+      border: none;
+    }
+    #books_bookmarks:hover {
+      cursor: pointer;
+      background: linear-gradient(
+        270deg,
+        rgba(132, 132, 6, 0.681) 0%,
+        rgba(218, 237, 47, 0.873) 60%
+      );
+    }
+    #books_info {
+      border-radius: 4px;
+      padding: 10px 26px;
+      background: rgba(13, 117, 255, 0.05);
+      color: rgb(13, 117, 255);
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      border: none;
+    }
+    #books_info:hover {
+      cursor: pointer;
+      background: linear-gradient(
+        270deg,
+        rgb(2, 29, 78, 0.681) 0%,
+        rgba(31, 215, 232, 0.873) 60%
+      );
+      color: rgb(4, 4, 38);
+    }
+    #books_read {
+      margin-top: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 4px;
+      background: rgb(117, 130, 138);
+      color: rgb(255, 255, 255);
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      border: none;
+      margin-bottom: 13px;
+    }
+    #books_read:hover {
+      cursor: pointer;
+      background: linear-gradient(
+        270deg,
+        rgba(1, 18, 49, 0.681) 0%,
+        rgba(22, 57, 164, 0.873) 60%
+      );
+    }
+    .page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+    .default_page {
+      border: 1px solid rgb(13, 117, 255) !important;
+      color: rgb(13, 117, 255) !important;
+    }
+    .page li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border: 1px solid rgb(223, 227, 232);
+      border-radius: 4px;
+      color: rgb(33, 43, 54);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+    .left_arrov {
+      background: rgb(145, 158, 171);
+      opacity: 0.5;
+    }
+  }
+ 
+  

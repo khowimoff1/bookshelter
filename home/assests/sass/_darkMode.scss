@@ -1,0 +1,380 @@
+.header_dark {
+  .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    background-color: black;
+  }
+  .logo {
+    display: none;
+  }
+  .header_top label {
+    width: 50%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: rgb(40, 47, 58);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+  }
+  .header_top label:hover {
+    cursor: text;
+    border: 1px solid blue;
+  }
+  #inInput {
+    width: 93%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+  }
+  .dark_mode_s {
+    display: none;
+  }
+  .logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logout img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  #logout {
+    padding: 10px 23px;
+    border-radius: 4px;
+    background: rgb(13, 117, 255);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    border: none;
+  }
+  #logout:hover {
+    cursor: pointer;
+    background-color: rgb(2, 29, 78);
+    background: linear-gradient(
+      270deg,
+      rgb(2, 29, 78, 0.681) 0%,
+      rgba(31, 215, 232, 0.873) 60%
+    );
+    color: rgb(4, 4, 38);
+  }
+  .header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    border-top: 1px solid rgb(54, 60, 70);
+    border-bottom: 1px solid rgb(54, 60, 70);
+    background-color: black;
+  }
+  .header_bottom h1 {
+    margin-left: 28%;
+    color: #fff;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+  #calendar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 15px;
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    border-radius: 4px;
+    background: rgb(166, 176, 195);
+    border: none;
+  }
+  #calendar:hover {
+    cursor: pointer;
+    background-color: rgb(6, 54, 143);
+    background: linear-gradient(
+      270deg,
+      rgba(2, 78, 18, 0.681) 0%,
+      rgba(171, 157, 9, 0.873) 60%
+    );
+    color: rgb(4, 4, 38);
+  }
+}
+.hero_dark {
+  display: flex;
+  background: black;
+  .bookmarks {
+    background: black;
+    margin-top: 1px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top:  1px solid rgb(54, 60, 70);
+    border-right: 1px solid rgb(54, 60, 70);
+  }
+  .bookmarks h1 {
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-bottom: 5px;
+  }
+  .bookmarks p {
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 155.6%;
+  }
+  .bookmarks_shop li {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    background: rgb(248, 250, 253);
+    margin-top: 15px;
+  }
+  .bookmarks_shop li div h3 {
+    color: rgb(0, 0, 0);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .bookmarks_shop li div p {
+    color: rgb(117, 120, 129);
+    font-family: Noto Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 5px;
+  }
+  .book_open {
+    cursor: pointer;
+  }
+  .open_delete {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 23px;
+    margin-top: 23px;
+    margin-left: 23px;
+    margin-bottom: 23px;
+  }
+  .books li {
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(69, 64, 64);
+  }
+  .books li:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+  .books_img {
+    margin: 23px 28px;
+    padding: 18px 28px 18px 20px;
+    border-radius: 5px;
+    background: rgb(146, 158, 175);
+  }
+  .books_img_n {
+    margin-left: 20px;
+  }
+  .books_img_n h1 {
+    color: rgb(0, 0, 0);
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .books_img_n p {
+    color: rgb(117, 120, 129);
+    font-family: Noto Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 2px;
+  }
+  .books_btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .books_btn div:hover {
+    cursor: default;
+  }
+  #books_bookmarks {
+    padding: 10px 26px;
+    color: rgb(0, 0, 0);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    border-radius: 4px;
+    background: rgb(255, 216, 13);
+    border: none;
+  }
+  #books_bookmarks:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      270deg,
+      rgba(132, 132, 6, 0.681) 0%,
+      rgba(218, 237, 47, 0.873) 60%
+    );
+  }
+  #books_info {
+    border-radius: 4px;
+    padding: 10px 26px;
+    background: rgb(48, 83, 82);
+    color: rgb(13, 117, 255);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    border: none;
+  }
+  #books_info:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      270deg,
+      rgb(2, 29, 78, 0.681) 0%,
+      rgba(31, 215, 232, 0.873) 60%
+    );
+    color: rgb(4, 4, 38);
+  }
+  #books_read {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    background: rgb(117, 130, 138);
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    border: none;
+    margin-bottom: 13px;
+  }
+  #books_read:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      270deg,
+      rgba(1, 18, 49, 0.681) 0%,
+      rgba(22, 57, 164, 0.873) 60%
+    );
+  }
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+  }
+  .default_page {
+    border: 1px solid rgb(13, 117, 255) !important;
+    color: rgb(13, 117, 255) !important;
+  }
+  .page li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgb(223, 227, 232);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .left_arrov {
+    background: rgb(145, 158, 171);
+    opacity: 0.5;
+  }
+}
+.information_dark {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    background-color: #000000;
+    padding-bottom: 211px;
+    .info_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 19px 33px;
+      background: rgb(44, 47, 52);
+      h1 {
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+      }
+      img{
+        cursor: pointer;
+      }
+    }
+    .info_hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 40px;
+      p {
+        color: rgb(245, 246, 247);
+        font-family: Rubik;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 170.3%;
+      }
+    }
+    .info_information {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      padding: 10px 40px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        h1 {
+          color: rgb(226, 227, 229);
+          font-family: Rubik;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 17px;
+          margin-right: 10px;
+        }
+        div {
+          padding: 8px 30px;
+          border-radius: 30px;
+          background: rgba(13, 117, 255, 0.09);
+          margin-right: 10px;
+          a {
+            color: rgb(13, 117, 255);
+            font-family: Rubik;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+          }
+        }
+      }
+    }
+  }

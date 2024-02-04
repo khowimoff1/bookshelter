@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+.header{
+  .header_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+  }
+  .logo_dark{
+    display: none;
+  }
+  .header_top label {
+    width: 50%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: rgb(248, 250, 253);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+  }
+  .header_top label:hover {
+    cursor: text;
+    border: 1px solid blue;
+  }
+  #inInput {
+    width: 93%;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  #dark_mode{
+    display: none;
+}
+  .logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logout img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  #logout {
+    padding: 10px 23px;
+    border-radius: 4px;
+    background: rgb(13, 117, 255);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    border: none;
+  }
+  #logout:hover {
+    cursor: pointer;
+    background-color: rgb(2, 29, 78);
+    background: linear-gradient(
+      270deg,
+      rgb(2, 29, 78, 0.681) 0%,
+      rgba(31, 215, 232, 0.873) 60%
+    );
+    color: rgb(4, 4, 38);
+  }
+  
+  .header_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 20px;
+    border-top: 1px solid rgb(214, 218, 224);
+    border-bottom: 1px solid rgb(214, 218, 224);
+  }
+  .header_bottom h1 {
+    margin-left: 28%;
+    color: rgb(34, 37, 49);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+  #calendar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 15px;
+    color: rgb(255, 255, 255);
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    border-radius: 4px;
+    background: rgb(166, 176, 195);
+    border: none;
+  }
+  #calendar:hover {
+    cursor: pointer;
+    background-color: rgb(6, 54, 143);
+    background: linear-gradient(
+      270deg,
+      rgba(2, 78, 18, 0.681) 0%,
+      rgba(171, 157, 9, 0.873) 60%
+    );
+    color: rgb(4, 4, 38);
+  }
+}

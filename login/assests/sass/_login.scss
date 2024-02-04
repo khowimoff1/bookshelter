@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../image/dark.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.login {
+  text-align: center;
+}
+.l_logo {
+  margin-bottom: 50px;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.login form label {
+  width: 300px;
+  height: 45px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 19px;
+  padding-left: 12px;
+  cursor: text;
+}
+.login form label:hover {
+  border: 1px solid rgb(8, 25, 215);
+}
+.login form label input {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  background: none;
+}
+.login button {
+  width: 310px;
+  height: 45px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  border: none;
+  color: rgb(13, 117, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.login button:hover {
+  background-color: #26088b;
+  color: #fff;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(189, 38, 50, 0.333));
+  box-shadow: 0 0 5px #0367f4, 0 0 15px #0367f4, 0 0 25px #0367f4,
+    0 0 100px #0367f4;
+  cursor: pointer;
+}

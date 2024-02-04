@@ -1,0 +1,749 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header .header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+}
+.header .logo_dark {
+  display: none;
+}
+.header .header_top label {
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: rgb(248, 250, 253);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+}
+.header .header_top label:hover {
+  cursor: text;
+  border: 1px solid blue;
+}
+.header #inInput {
+  width: 93%;
+  border: none;
+  outline: none;
+  background: none;
+}
+.header #dark_mode {
+  display: none;
+}
+.header .logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .logout img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.header #logout {
+  padding: 10px 23px;
+  border-radius: 4px;
+  background: rgb(13, 117, 255);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  border: none;
+}
+.header #logout:hover {
+  cursor: pointer;
+  background-color: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.header .header_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  border-top: 1px solid rgb(214, 218, 224);
+  border-bottom: 1px solid rgb(214, 218, 224);
+}
+.header .header_bottom h1 {
+  margin-left: 28%;
+  color: rgb(34, 37, 49);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+.header #calendar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 15px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 4px;
+  background: rgb(166, 176, 195);
+  border: none;
+}
+.header #calendar:hover {
+  cursor: pointer;
+  background-color: rgb(6, 54, 143);
+  background: linear-gradient(270deg, rgba(2, 78, 18, 0.681) 0%, rgba(171, 157, 9, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+.hero {
+  display: flex;
+  background: rgb(248, 250, 253);
+}
+.hero .bookmarks {
+  background: #fff;
+  margin-top: 1px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top: 1px solid rgb(214, 218, 224);
+  border-right: 1px solid rgb(214, 218, 224);
+}
+.hero .bookmarks h1 {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 5px;
+}
+.hero .bookmarks p {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 155.6%;
+}
+.hero .bookmarks_shop li {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  background: rgb(248, 250, 253);
+  margin-top: 15px;
+}
+.hero .bookmarks_shop li div h3 {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.hero .bookmarks_shop li div p {
+  color: rgb(117, 120, 129);
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 5px;
+}
+.hero .book_open {
+  cursor: pointer;
+}
+.hero .open_delete {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.hero .books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 23px;
+  margin-top: 23px;
+  margin-left: 23px;
+  margin-bottom: 23px;
+}
+.hero .books li {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+}
+.hero .books li:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.hero .books_img {
+  margin: 23px 28px;
+  padding: 18px 28px 18px 20px;
+  border-radius: 5px;
+  background: rgb(248, 250, 253);
+}
+.hero .books_img_n {
+  margin-left: 20px;
+}
+.hero .books_img_n h1 {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.hero .books_img_n p {
+  color: rgb(117, 120, 129);
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 2px;
+}
+.hero .books_btn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hero .books_btn div:hover {
+  cursor: default;
+}
+.hero #books_bookmarks {
+  padding: 10px 26px;
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 4px;
+  background: rgb(255, 216, 13);
+  border: none;
+}
+.hero #books_bookmarks:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgba(132, 132, 6, 0.681) 0%, rgba(218, 237, 47, 0.873) 60%);
+}
+.hero #books_info {
+  border-radius: 4px;
+  padding: 10px 26px;
+  background: rgba(13, 117, 255, 0.05);
+  color: rgb(13, 117, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border: none;
+}
+.hero #books_info:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.hero #books_read {
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  background: rgb(117, 130, 138);
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border: none;
+  margin-bottom: 13px;
+}
+.hero #books_read:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgba(1, 18, 49, 0.681) 0%, rgba(22, 57, 164, 0.873) 60%);
+}
+.hero .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.hero .default_page {
+  border: 1px solid rgb(13, 117, 255) !important;
+  color: rgb(13, 117, 255) !important;
+}
+.hero .page li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(223, 227, 232);
+  border-radius: 4px;
+  color: rgb(33, 43, 54);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.hero .left_arrov {
+  background: rgb(145, 158, 171);
+  opacity: 0.5;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: relative;
+  top: -1156px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container2 .information {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  background-color: #fff;
+  padding-bottom: 211px;
+}
+.container2 .information .info_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 33px;
+  background: rgb(248, 250, 253);
+}
+.container2 .information .info_header h1 {
+  color: rgb(34, 37, 49);
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.container2 .information .info_header img {
+  cursor: pointer;
+}
+.container2 .information .info_hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+}
+.container2 .information .info_hero p {
+  color: rgb(88, 102, 126);
+  font-family: Rubik;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 170.3%;
+}
+.container2 .information .info_information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 10px 40px;
+}
+.container2 .information .info_information li {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.container2 .information .info_information li h1 {
+  color: rgb(34, 37, 49);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-right: 10px;
+}
+.container2 .information .info_information li div {
+  padding: 8px 30px;
+  border-radius: 30px;
+  background: rgba(13, 117, 255, 0.09);
+  margin-right: 10px;
+}
+.container2 .information .info_information li div a {
+  color: rgb(13, 117, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.header_dark .header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  background-color: black;
+}
+.header_dark .logo {
+  display: none;
+}
+.header_dark .header_top label {
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: rgb(40, 47, 58);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 10px;
+}
+.header_dark .header_top label:hover {
+  cursor: text;
+  border: 1px solid blue;
+}
+.header_dark #inInput {
+  width: 93%;
+  border: none;
+  outline: none;
+  background: none;
+  color: #fff;
+}
+.header_dark .dark_mode_s {
+  display: none;
+}
+.header_dark .logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header_dark .logout img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.header_dark #logout {
+  padding: 10px 23px;
+  border-radius: 4px;
+  background: rgb(13, 117, 255);
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  border: none;
+}
+.header_dark #logout:hover {
+  cursor: pointer;
+  background-color: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.header_dark .header_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  border-top: 1px solid rgb(54, 60, 70);
+  border-bottom: 1px solid rgb(54, 60, 70);
+  background-color: black;
+}
+.header_dark .header_bottom h1 {
+  margin-left: 28%;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+}
+.header_dark #calendar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 15px;
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 4px;
+  background: rgb(166, 176, 195);
+  border: none;
+}
+.header_dark #calendar:hover {
+  cursor: pointer;
+  background-color: rgb(6, 54, 143);
+  background: linear-gradient(270deg, rgba(2, 78, 18, 0.681) 0%, rgba(171, 157, 9, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+.hero_dark {
+  display: flex;
+  background: black;
+}
+.hero_dark .bookmarks {
+  background: black;
+  margin-top: 1px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top: 1px solid rgb(54, 60, 70);
+  border-right: 1px solid rgb(54, 60, 70);
+}
+.hero_dark .bookmarks h1 {
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 5px;
+}
+.hero_dark .bookmarks p {
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 155.6%;
+}
+.hero_dark .bookmarks_shop li {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  background: rgb(248, 250, 253);
+  margin-top: 15px;
+}
+.hero_dark .bookmarks_shop li div h3 {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.hero_dark .bookmarks_shop li div p {
+  color: rgb(117, 120, 129);
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 5px;
+}
+.hero_dark .book_open {
+  cursor: pointer;
+}
+.hero_dark .open_delete {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.hero_dark .books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 23px;
+  margin-top: 23px;
+  margin-left: 23px;
+  margin-bottom: 23px;
+}
+.hero_dark .books li {
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+  background: rgb(69, 64, 64);
+}
+.hero_dark .books li:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.hero_dark .books_img {
+  margin: 23px 28px;
+  padding: 18px 28px 18px 20px;
+  border-radius: 5px;
+  background: rgb(146, 158, 175);
+}
+.hero_dark .books_img_n {
+  margin-left: 20px;
+}
+.hero_dark .books_img_n h1 {
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.hero_dark .books_img_n p {
+  color: rgb(117, 120, 129);
+  font-family: Noto Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 2px;
+}
+.hero_dark .books_btn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.hero_dark .books_btn div:hover {
+  cursor: default;
+}
+.hero_dark #books_bookmarks {
+  padding: 10px 26px;
+  color: rgb(0, 0, 0);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 4px;
+  background: rgb(255, 216, 13);
+  border: none;
+}
+.hero_dark #books_bookmarks:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgba(132, 132, 6, 0.681) 0%, rgba(218, 237, 47, 0.873) 60%);
+}
+.hero_dark #books_info {
+  border-radius: 4px;
+  padding: 10px 26px;
+  background: rgb(48, 83, 82);
+  color: rgb(13, 117, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border: none;
+}
+.hero_dark #books_info:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+.hero_dark #books_read {
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  background: rgb(117, 130, 138);
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  border: none;
+  margin-bottom: 13px;
+}
+.hero_dark #books_read:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, rgba(1, 18, 49, 0.681) 0%, rgba(22, 57, 164, 0.873) 60%);
+}
+.hero_dark .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.hero_dark .default_page {
+  border: 1px solid rgb(13, 117, 255) !important;
+  color: rgb(13, 117, 255) !important;
+}
+.hero_dark .page li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgb(223, 227, 232);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.hero_dark .left_arrov {
+  background: rgb(145, 158, 171);
+  opacity: 0.5;
+}
+
+.information_dark {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  background-color: #000000;
+  padding-bottom: 211px;
+}
+.information_dark .info_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 33px;
+  background: rgb(44, 47, 52);
+}
+.information_dark .info_header h1 {
+  color: rgb(255, 255, 255);
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.information_dark .info_header img {
+  cursor: pointer;
+}
+.information_dark .info_hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+}
+.information_dark .info_hero p {
+  color: rgb(245, 246, 247);
+  font-family: Rubik;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 170.3%;
+}
+.information_dark .info_information {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 10px 40px;
+}
+.information_dark .info_information li {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.information_dark .info_information li h1 {
+  color: rgb(226, 227, 229);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin-right: 10px;
+}
+.information_dark .info_information li div {
+  padding: 8px 30px;
+  border-radius: 30px;
+  background: rgba(13, 117, 255, 0.09);
+  margin-right: 10px;
+}
+.information_dark .info_information li div a {
+  color: rgb(13, 117, 255);
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}/*# sourceMappingURL=home.css.map */
