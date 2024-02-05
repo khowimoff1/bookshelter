@@ -1,4 +1,18 @@
 const form = document.getElementById("l_form");
+const pass = document.getElementById("l_password");
+const eye = document.querySelector(".eye");
+const eyeSlash = document.querySelector(".eye_slash"); 
+
+eye.addEventListener("click", ()=>{
+  pass.setAttribute("type","text")
+  eye.setAttribute("style","display:none");
+  eyeSlash.setAttribute("style","display:block");
+})
+eyeSlash.addEventListener("click", ()=>{
+  pass.setAttribute("type","password")
+  eyeSlash.setAttribute("style","display:none");
+  eye.setAttribute("style","display:block");
+})
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -22,3 +36,4 @@ form.addEventListener("submit", (e) => {
       window.location.replace("phome.html");
     });
 });
+

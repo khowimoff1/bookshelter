@@ -14,16 +14,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.login {
   text-align: center;
 }
-
-.l_logo {
+.login .l_logo {
   margin-bottom: 50px;
 }
-
 .login form {
   display: flex;
   flex-direction: column;
@@ -31,7 +26,6 @@ body {
   justify-content: center;
   gap: 20px;
 }
-
 .login form label {
   width: 300px;
   height: 45px;
@@ -44,11 +38,6 @@ body {
   padding-left: 12px;
   cursor: text;
 }
-
-.login form label:hover {
-  border: 1px solid rgb(8, 25, 215);
-}
-
 .login form label input {
   font-family: Montserrat;
   font-size: 14px;
@@ -58,6 +47,9 @@ body {
   border: none;
   outline: none;
   background: none;
+}
+.login form label:hover {
+  border: 1px solid rgb(8, 25, 215);
 }
 
 .login button {
@@ -79,5 +71,15 @@ body {
   color: #fff;
   -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(189, 38, 50, 0.333));
   box-shadow: 0 0 5px #0367f4, 0 0 15px #0367f4, 0 0 25px #0367f4, 0 0 100px #0367f4;
+  cursor: pointer;
+}
+
+.eye_slash {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.eye {
+  margin-left: 30px;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

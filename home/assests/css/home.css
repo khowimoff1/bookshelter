@@ -526,7 +526,7 @@ a {
   margin-top: 15px;
 }
 .hero_dark .bookmarks_shop li div h3 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: Rubik;
   font-size: 16px;
   font-weight: 400;
@@ -576,7 +576,7 @@ a {
   margin-left: 20px;
 }
 .hero_dark .books_img_n h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: Rubik;
   font-size: 18px;
   font-weight: 500;
