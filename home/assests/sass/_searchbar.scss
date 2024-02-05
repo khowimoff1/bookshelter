@@ -1,0 +1,126 @@
+.searchbar{
+    display: block;
+    border-radius: 6px;
+    width: 1054px;
+    height: 923px;
+    background-color: white;
+    position: relative;
+    top: -999px;
+    left: 373px;
+    .books {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+        padding-top: 32px;
+        margin-left: 32px;
+        margin-bottom: 23px;
+      }
+      .books li {
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+      }
+      .books li:hover {
+        transform: scale(1.05);
+        transition: all 0.5s ease; 
+      }
+      .books_img {
+        margin: 23px 42px;
+        padding: 18px 18px 18px 20px;
+        border-radius: 5px;
+        background: rgb(248, 250, 253);
+      }
+      .books_img_n {
+        margin-left: 20px;
+      }
+      .books_img_n h1 {
+        color: rgb(0, 0, 0);
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+      }
+      .books_img_n p {
+        color: rgb(117, 120, 129);
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-top: 2px;
+      }
+      .books_btn {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .books_btn div{
+        display: flex;
+        gap: 5px;
+      }
+      .books_btn div:hover {
+        cursor: default;
+      }
+      #books_bookmarks {
+        padding: 12px 32px;
+        color: rgb(0, 0, 0);
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        border-radius: 4px;
+        background: rgb(255, 216, 13);
+        border: none;
+      }
+      #books_bookmarks:hover {
+        cursor: pointer;
+        background: linear-gradient(
+          270deg,
+          rgba(132, 132, 6, 0.681) 0%,
+          rgba(218, 237, 47, 0.873) 60%
+        );
+      }
+      #books_info {
+        border-radius: 4px;
+        padding: 12px 38px;
+        background: rgba(13, 117, 255, 0.05);
+        color: rgb(13, 117, 255);
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        border: none;
+      }
+      #books_info:hover {
+        cursor: pointer;
+        background: linear-gradient(
+          270deg,
+          rgb(2, 29, 78, 0.681) 0%,
+          rgba(31, 215, 232, 0.873) 60%
+        );
+        color: rgb(4, 4, 38);
+      }
+      #books_read {
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 4px;
+        background: rgb(117, 130, 138);
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        border: none;
+        margin-bottom: 13px;
+      }
+      #books_read:hover {
+        cursor: pointer;
+        background: linear-gradient(
+          270deg,
+          rgba(1, 18, 49, 0.681) 0%,
+          rgba(22, 57, 164, 0.873) 60%
+        );
+      }
+}

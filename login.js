@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
     .then((res) => res.json())
     .then((data) => {
       window.localStorage.setItem("token", data.token);
-      window.location.replace("phome.html");
+      window.location.replace("home.html");
     });
 });
 
