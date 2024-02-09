@@ -10,6 +10,7 @@ const header = document.querySelector(".header");
 const hero = document.querySelector(".hero");
 const information = document.querySelector(".information");
 const searchbar = document.querySelector(".searchbar");
+const body = document.querySelector(".body_dark");
 
 logout.addEventListener("click", (e) => {
   localStorage.removeItem("password");
@@ -21,12 +22,14 @@ darkMode.addEventListener("click", (e) => {
   hero.setAttribute("class", "hero_dark");
   information.setAttribute("class", "information_dark");
   searchbar.setAttribute("class", "searchbar_dark");
+  body.setAttribute("style","background-color:black;");
 });
 lightMode.addEventListener("click", (e) => {
   header.setAttribute("class", "header");
   hero.setAttribute("class", "hero");
   information.setAttribute("class", "information");
   searchbar.setAttribute("class", "searchbar");
+  body.setAttribute("style","background-color:none;");
 });
 
 const inInput = document.getElementById("inInput");
